@@ -24,3 +24,52 @@ $dark-gray: hsl(0, 0%, 59%);
 
 // fonts manager
 $font-basic: 'Kumbh Sans', sans-serif;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	min-height: 100vh; //consider moving it
+	background-color: $dark-cyan;
+	background-image: url('../../dist/img/bg-pattern-top.svg'),
+		url('../../dist/img/bg-pattern-bottom.svg');
+	background-repeat: no-repeat, no-repeat;
+	background-position: right 38vw bottom 49vh, left 30vw top 43vh;
+	font-family: $font-basic;
+	font-size: 1.8rem;
+	font-weight: 400;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+button {
+	font: inherit;
+	border: none;
+	text-decoration: none;
+	cursor: pointer;
+	outline: none;
+}
