@@ -1,0 +1,5 @@
+@use './base' as b;
+
+.user {
+	background-color: b.$white;
+}
