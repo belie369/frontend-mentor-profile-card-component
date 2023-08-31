@@ -5,7 +5,7 @@
 	min-height: 37.4rem;
 	background-color: b.$white;
 	text-align: center;
-	border-radius: 0.8rem;
+	border-radius: 1.4rem;
 	overflow: hidden;
 
 	&__header {
@@ -35,7 +35,7 @@
 	}
 
 	&__info {
-		margin: 1rem;
+		margin: 1.5rem;
 	}
 
 	&__location {
@@ -43,6 +43,27 @@
 	}
 
 	&__stats {
-		display: inline-block;
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 1.5rem;
+		padding-top: 2.1rem;
+		border-top: 1px solid b.$dark-gray-2;
+
+		&-num {
+			color: b.$very-dark-blue;
+			font-weight: 700;
+		}
+
+		&-type {
+			color: b.$dark-grayish-blue;
+			font-size: 1rem;
+			letter-spacing: 0.2rem;
+		}
+	}
+
+	&__stats-detials {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
 	}
 }
