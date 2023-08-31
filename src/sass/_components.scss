@@ -1,5 +1,48 @@
 @use './base' as b;
 
 .user {
+	min-width: 32.6rem;
+	min-height: 37.4rem;
 	background-color: b.$white;
+	text-align: center;
+	border-radius: 0.8rem;
+	overflow: hidden;
+
+	&__header {
+		background-image: url('../../dist/img/bg-pattern-card.svg');
+		min-height: 14.7rem;
+	}
+
+	&__details {
+		// display: flex;
+		// flex-direction: column;
+		// align-items: center;
+		// text-align: center;
+	}
+
+	&__photo {
+		// display: block;
+		// transform: translateY(-50%);
+		display: block;
+	}
+
+	&__img {
+		// margin: calc(-1 * 96px / 2) auto 0;
+		margin: calc((b.$profile-photo / 2) * -1) auto 0;
+		display: block;
+		border: 0.4rem solid b.$white;
+		border-radius: 50%;
+	}
+
+	&__info {
+		margin: 1rem;
+	}
+
+	&__location {
+		// text-align: center;
+	}
+
+	&__stats {
+		display: inline-block;
+	}
 }

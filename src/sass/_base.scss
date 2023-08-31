@@ -26,6 +26,9 @@ $white: #fff;
 // fonts manager
 $font-basic: 'Kumbh Sans', sans-serif;
 
+// image sizes
+$profile-photo: 96px;
+
 *,
 *::before,
 *::after {
@@ -45,7 +48,7 @@ body {
 	background-image: url('../../dist/img/bg-pattern-top.svg'),
 		url('../../dist/img/bg-pattern-bottom.svg');
 	background-repeat: no-repeat, no-repeat;
-	background-position: right 38vw bottom 49vh, left 30vw top 43vh;
+	background-position: right 38vw bottom 49vh, left 30vw top 49vh;
 	font-family: $font-basic;
 	font-size: 1.8rem;
 	font-weight: 400;
