@@ -6,6 +6,7 @@
 	background-color: b.$white;
 	text-align: center;
 	border-radius: 1.4rem;
+	box-shadow: 0px 15px 30px hsla(229, 23%, 23%, 0.4);
 	overflow: hidden;
 
 	&__header {
@@ -23,14 +24,14 @@
 	&__photo {
 		// display: block;
 		// transform: translateY(-50%);
-		display: block;
+		// display: block;
 	}
 
 	&__img {
 		// margin: calc(-1 * 96px / 2) auto 0;
 		margin: calc((b.$profile-photo / 2) * -1) auto 0;
 		display: block;
-		border: 0.4rem solid b.$white;
+		border: 0.5rem solid b.$white;
 		border-radius: 50%;
 	}
 
@@ -38,15 +39,27 @@
 		margin: 1.5rem;
 	}
 
+	&__name {
+		padding-right: 0.5rem;
+		color: b.$very-dark-blue;
+		font-weight: 700;
+	}
+
+	&__age {
+		color: b.$dark-grayish-blue;
+	}
+
 	&__location {
-		// text-align: center;
+		margin: 0.6rem 0 2.2rem;
+		color: b.$dark-grayish-blue;
+		font-size: 1.4rem;
 	}
 
 	&__stats {
 		display: flex;
 		justify-content: space-evenly;
-		margin-bottom: 1.5rem;
-		padding-top: 2.1rem;
+		margin-bottom: 1.8rem;
+		padding-top: 2.4rem;
 		border-top: 1px solid b.$dark-gray-2;
 
 		&-num {
@@ -64,6 +77,6 @@
 	&__stats-detials {
 		display: flex;
 		flex-direction: column;
-		gap: 0.5rem;
+		gap: 0.4rem;
 	}
 }
