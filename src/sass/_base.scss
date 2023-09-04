@@ -54,6 +54,11 @@ body {
 	font-family: $font-basic;
 	font-size: 1.8rem;
 	font-weight: 400;
+
+	@include respond(large) {
+		background-position: right 39vw bottom 34vh, left 45vw top 52vh;
+		background-size: 100%, auto 95%;
+	}
 }
 
 p,
