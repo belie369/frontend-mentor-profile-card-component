@@ -56,8 +56,8 @@ body {
 	font-weight: 400;
 
 	@include respond(large) {
-		background-position: right 39vw bottom 34vh, left 45vw top 52vh;
-		background-size: 100%, auto 95%;
+		background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+		background-size: auto 100%, auto 100%;
 	}
 }
 
