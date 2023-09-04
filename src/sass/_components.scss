@@ -14,19 +14,6 @@
 		min-height: 14.7rem;
 	}
 
-	&__details {
-		// display: flex;
-		// flex-direction: column;
-		// align-items: center;
-		// text-align: center;
-	}
-
-	&__photo {
-		// display: block;
-		// transform: translateY(-50%);
-		// display: block;
-	}
-
 	&__img {
 		// margin: calc(-1 * 96px / 2) auto 0;
 		margin: calc((b.$profile-photo / 2) * -1) auto 0;
