@@ -1,6 +1,28 @@
+@use './base' as b;
+
+.body {
+	position: relative;
+}
+
 .container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.3em;
+	position: absolute;
+	padding: 1em;
+	width: 100%;
+	text-align: center;
+	bottom: 0.4em;
+
+	@include b.respond(large) {
+		flex-direction: row;
+	}
 }
