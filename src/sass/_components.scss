@@ -83,3 +83,11 @@
 		gap: 0.4rem;
 	}
 }
+
+.slide-top {
+	animation: slide-top 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) forwards;
+}
+
+.vanish-in {
+	animation: vanishIn 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) 0.2s 1 backwards;
+}

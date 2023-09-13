@@ -31,6 +31,27 @@ $font-basic: 'Kumbh Sans', sans-serif;
 // image sizes
 $profile-photo: 96px;
 
+// animations
+@keyframes slide-top {
+	0% {
+		transform: translateY(100px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes vanishIn {
+	0% {
+		opacity: 0;
+		filter: blur(90px);
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0px);
+	}
+}
+
 *,
 *::before,
 *::after {
