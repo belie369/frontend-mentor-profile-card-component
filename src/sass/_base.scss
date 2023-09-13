@@ -21,8 +21,9 @@ $dark-grayish-blue: hsl(227, 10%, 46%);
 
 // neutral colors
 $dark-gray-1: hsl(0, 0%, 59%);
-$dark-gray-2: hsl(0, 0%, 59%, 0.3);
-$white: #fff;
+$dark-gray-2: hsla(0, 0%, 59%, 0.3);
+$white-1: hsl(0, 100%, 100%);
+$white-2: hsla(0, 0%, 100%, 0.7);
 
 // fonts manager
 $font-basic: 'Kumbh Sans', sans-serif;
@@ -89,6 +90,23 @@ ul {
 	list-style: none;
 }
 
+a {
+	// display: inline-block;
+	padding: 0.1em;
+	color: $very-dark-blue;
+	font-weight: 400;
+	text-decoration: none;
+	transform: translateY(-0.03rem);
+	transition: background-color 0.2s, color 0.2s;
+
+	&:hover,
+	&:focus {
+		background-color: $very-dark-blue;
+		color: $dark-cyan;
+		outline: none;
+	}
+}
+
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute;
 	width: 1px;
@@ -100,5 +118,6 @@ ul {
 }
 
 .footer {
-	color: $dark-gray-1;
+	color: $white-2;
+	font-size: 1.5rem;
 }

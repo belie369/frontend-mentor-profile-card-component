@@ -3,7 +3,7 @@
 .user {
 	min-width: 32.6rem;
 	min-height: 37.4rem;
-	background-color: b.$white;
+	background-color: b.$white-1;
 	text-align: center;
 	border-radius: 1.4rem;
 	box-shadow: 0px 15px 30px hsla(229, 23%, 23%, 0.2);
@@ -26,7 +26,7 @@
 		// margin: calc(-1 * 96px / 2) auto 0;
 		margin: calc((b.$profile-photo / 2) * -1) auto 0;
 		// display: block;
-		border: 0.5rem solid b.$white;
+		border: 0.5rem solid b.$white-1;
 		border-radius: 50%;
 	}
 
